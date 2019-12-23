@@ -4,6 +4,24 @@
 
 cUrl - Client for URLs
 
+## Json ##
+
+Using JSON format: 
+
+_curl -d "{\"name\":\"Paul\", \"status\": false}" -H "Content-Type: application/json" -X POST http://localhost:8090/service_
+
+Usgin external File JSON:
+
+Create: regs.json
+```
+{
+	"name":"Paul",
+	"status":true
+}
+```
+_curl -d "@registro.json" -H "Content-Type: application/json" -X POST http://localhost:8090/service/
+
+
 
 # Some links for more in depth learning
 
