@@ -8,7 +8,10 @@ cUrl - Client for URLs
 
 Using JSON format: 
 
-_curl -d "{\"name\":\"Paul\", \"status\": false}" -H "Content-Type: application/json" -X POST http://localhost:8090/service_
+Command line:
+```curl -d "{\"name\":\"Paul\", \"status\": false}" -H "Content-Type: application/json" -X POST http://localhost:8090/service```
+_replace http://localhost:8090/service from your URL_
+
 
 Usgin external File JSON:
 
@@ -19,8 +22,9 @@ Create: regs.json
 	"status":true
 }
 ```
-_curl -d "@registro.json" -H "Content-Type: application/json" -X POST http://localhost:8090/service/
-
+Command line:
+```curl -d "@regs.json" -H "Content-Type: application/json" -X POST http://localhost:8090/service/```
+_replace http://localhost:8090/service from your URL_
 
 
 # Some links for more in depth learning
