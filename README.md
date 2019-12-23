@@ -16,7 +16,7 @@ _replace http://localhost:8090/service from your URL_
 Usgin external File JSON:
 
 Create: regs.json
-```
+```json
 {
 	"name":"Paul",
 	"status":true
