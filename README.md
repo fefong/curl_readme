@@ -4,7 +4,7 @@
 
 cUrl - Client for URLs
 
-## Json ##
+## JSON ##
 
 Using JSON format: 
 
