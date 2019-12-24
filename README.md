@@ -26,10 +26,7 @@ curl \
 
 ## JSON ##
 
-Using JSON format: 
-
-Command line:
-```curl -d "{ JSON }" -H "HEADER" -X POST http://SERVICE_URL```
+**Using JSON format on the command line**
 
 Example:
 
@@ -38,9 +35,10 @@ Example:
 :warning: _replace http://localhost:8090/foo/service from your URL_
 
 
-Usgin external File JSON:
+**Using external JSON file **
 
 Create: ```regs.json```
+
 ```json
 {
 	"name":"Paul",
@@ -48,7 +46,8 @@ Create: ```regs.json```
 }
 ```
 
-Command line:
+Example:
+
 ```curl -d "@regs.json" -H "Content-Type: application/json" -X POST http://localhost:8090/foo/service/```
 :warning: _replace http://localhost:8090/foo/service from your URL_
 
