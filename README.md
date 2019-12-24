@@ -35,7 +35,7 @@ Example:
 :warning: _replace http://localhost:8090/foo/service from your URL_
 
 
-**Using external JSON file **
+**Using external JSON file**
 
 Create: ```regs.json```
 
