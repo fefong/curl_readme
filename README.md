@@ -16,7 +16,7 @@ Request method:
 
 ## Break Lines ##
 
-```
+```cmd
 curl \
    -d "{ JSON }" \
    -H "HEADER" \
@@ -30,7 +30,9 @@ curl \
 
 Example:
 
-```curl -d "{\"name\":\"Paul\", \"status\": false}" -H "Content-Type: application/json" -X POST http://localhost:8090/foo/service```
+```cmd
+curl -d "{\"name\":\"Paul\", \"status\": false}" -H "Content-Type: application/json" -X POST http://localhost:8090/foo/service
+```
 
 :warning: _replace http://localhost:8090/foo/service from your URL_
 
@@ -48,7 +50,9 @@ Create: ```regs.json```
 
 Example:
 
-```curl -d "@regs.json" -H "Content-Type: application/json" -X POST http://localhost:8090/foo/service/```
+```cmd
+curl -d "@regs.json" -H "Content-Type: application/json" -X POST http://localhost:8090/foo/service/
+```
 :warning: _replace http://localhost:8090/foo/service from your URL_
 
 
