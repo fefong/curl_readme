@@ -2,29 +2,55 @@
 
 ## Getting started with curl ##
 
-cUrl - Client for URLs
+CURL - Client for URLs
+
+CURL is a utility that allows developers to access the content of a URL, explore response headers, get action responses, confirm correct encoding.
+
+Request method: 
+- [X] GET
+- [x] HEAD
+- [x] POST
+- [x] PUT
+- [x] DELETE
+
+
+## Break Lines ##
+
+```
+curl \
+   -d "{ JSON }" \
+   -H "HEADER" \
+   -X POST http://SERVICE_URL
+```
+:warning: _Line breaks are problematic on Windows, so I don’t recommend formatting curl requests like this._
 
 ## JSON ##
 
 Using JSON format: 
 
 Command line:
-```curl -d "{\"name\":\"Paul\", \"status\": false}" -H "Content-Type: application/json" -X POST http://localhost:8090/service```
-_replace http://localhost:8090/service from your URL_
+```curl -d "{ JSON }" -H "HEADER" -X POST http://SERVICE_URL```
+
+Example:
+
+```curl -d "{\"name\":\"Paul\", \"status\": false}" -H "Content-Type: application/json" -X POST http://localhost:8090/foo/service```
+
+:warning: _replace http://localhost:8090/foo/service from your URL_
 
 
 Usgin external File JSON:
 
-Create: regs.json
+Create: ```regs.json```
 ```json
 {
 	"name":"Paul",
 	"status":true
 }
 ```
+
 Command line:
-```curl -d "@regs.json" -H "Content-Type: application/json" -X POST http://localhost:8090/service/```
-_replace http://localhost:8090/service from your URL_
+```curl -d "@regs.json" -H "Content-Type: application/json" -X POST http://localhost:8090/foo/service/```
+:warning: _replace http://localhost:8090/foo/service from your URL_
 
 
 
